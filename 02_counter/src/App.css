@@ -1,0 +1,37 @@
+
+body{
+  background-color: black;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+button{
+  font-size: 40px;
+  border-radius: 15px
+
+}
+
+#Add{
+  background-color: #1bc71b; 
+}
+#Add:hover{
+  background-color: #00ff00; 
+}
+
+#Remove{
+  background-color: #d02525;
+}
+#Remove:hover{
+  background-color: #ff0000;
+}
+
+#Reset{
+  background-color: rgb(201, 201, 31);
+}
+#Reset:hover{
+  background-color: rgb(243, 243, 7);
+  border: rgb(255, 0, 0) 150x;
+}
