@@ -8,12 +8,22 @@ function App() {
   // let counter = 5;
 
   let AddCounter = () => {
-
-    if(counter == 20){
+    if(counter >= 20){
       setcounter(counter = 20)
     }
     else{
+      /*In React, updates are sent as bundles. The Fiber architecture then breaks these bundles into smaller units of work. Upon detecting repetitive tasks, Fiber optimizes performance by updating only the necessary operations, rather than reprocessing the entire task.*/
       setcounter(counter+1)
+      setcounter(counter+1)
+      setcounter(counter+1)
+      setcounter(counter+1)
+
+      // If we have to increase the value of counter like this, then we have to write
+      // NOTE : This is not optimized way
+
+      // setcounter(PrevCounter => PrevCounter+1)
+      // setcounter(PrevCounter => PrevCounter+1)
+      // setcounter(PrevCounter => PrevCounter+1)
     }
   }
 
